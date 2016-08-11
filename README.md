@@ -1,3 +1,4 @@
-# react-webpack-lab
-Smart development/production environment for React using Webpack, css-modules,
-postcss, cssnext
+# react-streetlife
+
+Newsfeed single page app for a coding challenge built using react, css-modules,
+postcss, cssnext.

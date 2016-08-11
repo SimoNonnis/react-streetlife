@@ -1,11 +1,9 @@
 
 /* ==========================================================================
-   Variables
+   typography
    ========================================================================== */
 
-
-:root {
-  --mainColor: greenyellow;
-  --mobileColor: orangered;
-
+html {
+  font-family: 'Lato';
+  font-weight: 300;
 }

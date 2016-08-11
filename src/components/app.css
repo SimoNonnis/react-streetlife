@@ -2,9 +2,10 @@
 @import './css-shared/variables.css';
 @import './css-shared/media-queries.css';
 @import './css-shared/global.css';
+@import './css-shared/typography.css';
 
-
-.title {
-  text-transform: uppercase;
-  font-size: 2rem;
+.container {
+  background-color: lime;
+  width: 100vw;
+  height: 100vh;
 }

@@ -1,11 +1,15 @@
 import React from 'react';
+
+import Header from './Header';
+import NewsFeedContainer from './NewsFeedContainer';
+
 import styles from './app.css';
 
 
 const App = () => (
-  <div>
-      <h1 className={styles.title}>React + Webpack Boilerplate</h1>
-      <p>Let's start coding</p>
+  <div className={styles.container}>
+    <Header />
+    <NewsFeedContainer />
   </div>
 );
 

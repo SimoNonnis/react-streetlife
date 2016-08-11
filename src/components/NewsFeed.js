@@ -8,9 +8,10 @@ class NewsFeed extends  React.Component {
   }
 
   render () {
+    var { messages } = this.props;
     return (
       <div className={styles.container}>
-        helooo
+        {messages.map((msg) => <h2 key={msg.id}>{msg.author.display_name}</h2>)} 
       </div>
     );
   }

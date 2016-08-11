@@ -1,0 +1,10 @@
+@import 'normalize.css';
+@import './css-shared/variables.css';
+@import './css-shared/media-queries.css';
+@import './css-shared/global.css';
+
+
+.title {
+  text-transform: uppercase;
+  font-size: 2rem;
+}

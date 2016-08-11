@@ -1,0 +1,14 @@
+/* Style
+   ========================================================================== */
+
+html {
+  background-color: var(--mainColor);
+  font-family: 'Lato';
+  font-weight: 300;
+}
+
+@media (--tablet) {
+  html {
+    background-color: var(--mobileColor);
+  }
+}

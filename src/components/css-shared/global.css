@@ -2,6 +2,18 @@
 /* ==========================================================================
    Global
    ========================================================================== */
+
+html {
+  background-color: var(--sky);
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 h1,
 h2,
 h3 {
@@ -10,4 +22,18 @@ h3 {
 
 p {
   margin-bottom: 0;
+}
+
+button {
+  cursor:pointer;
+  border:0;
+  -webkit-appearance:none;
+  outline:0;
+  padding:0;
+  box-shadow:none;
+  user-select:none;
+  text-decoration:none;
+  font-style:normal;
+  color:inherit;
+  background-color: transparent;
 }

@@ -5,7 +5,14 @@
 
 
 :root {
-  --mainColor: greenyellow;
-  --mobileColor: orangered;
+  --textColor: #333;
+  --sky: #daebf5;
+  --white: #fff;
+  --sand: #ece8dd;
+  --stone: #f5f5f5;
+  --border: #d4d2cd;
+  --orange: #fe6c5f;
+  --skySolarized: #c7daf3;
+  --green: #edf2a2;
 
 }

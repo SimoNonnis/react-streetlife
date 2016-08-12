@@ -3,8 +3,7 @@
 
 .container {
   max-width: 600px;
-  margin: 0 auto;
-  background-color: orange;
   height: 100vh;
-  padding: 1em;
+  margin: 0 auto;
+  padding: 0 .5em 0 .5em;
 }

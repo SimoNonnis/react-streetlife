@@ -1,0 +1,17 @@
+@import './css-shared/variables.css';
+@import './css-shared/media-queries.css';
+
+.container {
+  background-color: var(--stone);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: .5em;
+}
+
+.item {
+  display: inline-block;
+  padding: .5em;
+  background-color: var(--white);
+  border-radius: 2px;
+  border: 1px solid var(--border);
+}

@@ -1,0 +1,32 @@
+@import './css-shared/variables.css';
+@import './css-shared/media-queries.css';
+
+.container {
+  padding: .5em;
+  background-color: var(--stone);
+}
+
+.title {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.viewAllBtn {
+  margin-left: .5em;
+  background-color: var(--green);
+  padding: .5em;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+
+  border: 1px solid var(--border);
+}
+
+.counter {
+  display: inline-block;
+  position: absolute;
+  top: -15px;
+  padding: .3em;
+  border-radius: 100%;
+  background-color: var(--skySolarized);
+}

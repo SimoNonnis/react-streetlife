@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Card from './Card';
+
 import styles from './newsFeed.css';
 
 class NewsFeed extends  React.Component {
@@ -11,7 +13,7 @@ class NewsFeed extends  React.Component {
     var { messages } = this.props;
     return (
       <div className={styles.container}>
-        {messages.map((msg) => <h2 key={msg.id}>{msg.author.display_name}</h2>)} 
+        { messages.map((msg) => <Card key={msg.id} msg={msg} />) }
       </div>
     );
   }

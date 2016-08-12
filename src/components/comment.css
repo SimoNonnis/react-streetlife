@@ -1,0 +1,12 @@
+@import './css-shared/variables.css';
+@import './css-shared/media-queries.css';
+
+.container {
+  background: var(--white);
+  border-radius: 2px;
+  padding: .5em;
+
+  margin: .5em 0 1em 0;
+
+  height: 100px;
+}

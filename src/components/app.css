@@ -5,7 +5,6 @@
 @import './css-shared/typography.css';
 
 .container {
-  background-color: lime;
   width: 100vw;
   height: 100vh;
 }

@@ -8,7 +8,7 @@ const Author = ({avatarUrl, name, time}) => (
       <img className={styles.avatar} src={avatarUrl} alt="Author Avatar"/>
     </span>
     <span className={styles.authorName}><strong>{name}</strong></span>
-    <span className={styles.time}><em>{time} ago</em></span>
+    <span className={styles.time}><em>{time}</em></span>
   </div>
 );
 

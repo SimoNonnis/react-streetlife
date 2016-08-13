@@ -2,24 +2,26 @@
 @import './css-shared/media-queries.css';
 
 .container {
-  padding: .5em;
   background-color: var(--stone);
   border-top: 1px solid var(--border);
+  padding-bottom: .5em;
 }
 
 .title {
+  margin: .5em;
+  padding: .5em;
   text-transform: uppercase;
   display: inline-block;
 }
 
 .viewAllBtn {
-  margin-left: .5em;
+  margin: .5em;
+  padding: .5em;
   background-color: var(--white);
   padding: .5em;
   border-radius: 2px;
   display: inline-block;
   position: relative;
-
   border: 1px solid var(--border);
 }
 

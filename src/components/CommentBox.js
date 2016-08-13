@@ -15,7 +15,7 @@ class CommentBox extends React.Component {
 
     return (
       <div className={styles.container}>
-        <h3 className={styles.title}>Latest Comments</h3>
+        <h4 className={styles.title}>Latest Comments</h4>
         <button className={styles.viewAllBtn}>View All
           <span className={styles.counter}>{count}</span>
         </button>

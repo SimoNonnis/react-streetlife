@@ -1,5 +1,5 @@
 import React from 'react';
-import timeAgo from '../helpers/helpers.js';
+import timeAgo from '../helpers/timeAgo';
 
 import Post from './Post';
 import Author from './Author';

@@ -8,7 +8,7 @@
 }
 
 .title {
-  margin: .5em;
+  font-size: 1.4rem;
   padding: .5em;
   text-transform: uppercase;
   display: inline-block;
@@ -26,12 +26,13 @@
 }
 
 .counter {
+  font-size: 1.4rem;
   display: inline-block;
   position: absolute;
-  top: -15px;
-  padding: .3em;
+  top: -6px;
+  padding: .2em;
   border-radius: 100%;
   background-color: var(--skySolarized);
-  width: 30;
-  height: 30;
+  width: 23px;
+  height: 22px;
 }

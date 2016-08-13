@@ -4,7 +4,7 @@ import styles from './tags.css';
 
 const Tags = ({tags}) => (
   <div className={styles.container} >
-    <h4 className={styles.title}>Tags: </h4>
+    <h4 className={styles.title}>Tags</h4>
     {tags.map((tag, i) => (
       <span key={`${i}tags`} className={styles.item}>{tag.name}</span>
     ))}

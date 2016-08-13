@@ -14,10 +14,10 @@ const Card = ({msg}) => {
       <Author
         avatarUrl={msg.author.avatar}
         name={msg.author.display_name}
-        date={msg.posted_at}
+        time={msg.updated_at}
       />
       <Tags />
-      <CommentBox />
+      <CommentBox comments={msg.comments}/>
     </div>
   )
 };

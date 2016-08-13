@@ -2,11 +2,36 @@
 @import './css-shared/media-queries.css';
 
 .container {
-  background: var(--white);
+  background: var(--grey);
   border-radius: 2px;
   padding: .5em;
-
   margin: .5em 0 1em 0;
+}
 
-  height: 100px;
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.avatarBlock {
+  display: inline-block;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.avatar {
+  width: 40px;
+  height: auto;
+  display: block;
+}
+
+.authorName {
+  margin-left: .5em;
+}
+
+.time {
+  display: inline-block;
+  margin-top: 1em;
 }

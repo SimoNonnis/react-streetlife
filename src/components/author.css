@@ -24,7 +24,7 @@
 }
 
 .authorName,
-.postedDate {
+.time {
   display: inline-block;
   padding: .5em;
 }

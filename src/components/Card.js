@@ -10,14 +10,17 @@ import styles from './card.css';
 const Card = ({msg}) => {
   return (
     <div className={styles.card}>
-      <Post title={msg.subject} body={msg.body}/>
+      <Post
+        title={msg.subject}
+        body={msg.body}
+      />
       <Author
         avatarUrl={msg.author.avatar}
         name={msg.author.display_name}
         time={msg.updated_at}
       />
-      <Tags />
-      <CommentBox comments={msg.comments}/>
+      { msg.tags.length > 0 ? <Tags tags={msg.tags} /> : null }
+      { msg.comments_count !== 0 ? <CommentBox comments={msg.comments} count={msg.comments_count}/> : null }
     </div>
   )
 };

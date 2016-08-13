@@ -4,6 +4,7 @@
 .container {
   padding: .5em;
   background-color: var(--stone);
+  border-top: 1px solid var(--border);
 }
 
 .title {
@@ -29,4 +30,6 @@
   padding: .3em;
   border-radius: 100%;
   background-color: var(--skySolarized);
+  width: 30;
+  height: 30;
 }

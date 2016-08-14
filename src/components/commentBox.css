@@ -2,7 +2,7 @@
 @import './css-shared/media-queries.css';
 
 .container {
-  background-color: var(--stone);
+  background-color: var(--skyArtic);
   border-top: 1px solid var(--border);
   padding-bottom: .5em;
 }

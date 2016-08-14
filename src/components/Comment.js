@@ -1,10 +1,19 @@
+/* eslint-disable react/no-danger */
+
 import React from 'react';
+
 import timeAgo from '../helpers/timeAgo';
 
 import styles from './comment.css';
 
 const Comment = ({avatarUrl, name, body, time}) => {
   var formatedTime = timeAgo(time);
+
+  function parseBody () {
+    return {
+      __html: body
+    }
+  }
 
   return (
     <div className={styles.container} >
@@ -15,7 +24,7 @@ const Comment = ({avatarUrl, name, body, time}) => {
         <h3 className={styles.authorName}>{name}</h3>
       </div>
 
-      <p>{body}</p>
+      <p dangerouslySetInnerHTML={parseBody()} />
       <span className={styles.time}><em>{formatedTime}</em></span>
 
     </div>

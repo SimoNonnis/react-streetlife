@@ -25,6 +25,20 @@ p {
   margin-bottom: 0;
 }
 
+a {
+  word-wrap: break-word;
+}
+
+a,
+a:visited {
+  color: var(--orange);
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
 button {
   cursor:pointer;
   border:0;

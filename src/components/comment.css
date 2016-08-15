@@ -5,7 +5,7 @@
   background: var(--grey);
   border-radius: 2px;
   padding: .5em;
-  margin: .5em .5em 1em .5em;
+  margin: 0 .5em 1em .5em;
 }
 
 .header {

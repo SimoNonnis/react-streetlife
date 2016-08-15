@@ -9,9 +9,11 @@ class CommentBoxContainer extends React.Component {
     this.state = {
       allComments: []
     }
+    this.getAllComments = this.getAllComments.bind(this);
   }
 
-  componentWillMount() {
+  getAllComments() {
+    console.info('View All Clicked');
     this.get('newsfeed');
   }
 
@@ -38,6 +40,7 @@ class CommentBoxContainer extends React.Component {
         commentsCount={commentsCount}
         postId={postId}
         allComments={allComments}
+        getAllComments ={this.getAllComments}
       />
     );
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { rootUrl } from '../constants/constants.js';
 import NewsFeed from './Newsfeed';
 
@@ -10,7 +11,7 @@ class NewsFeedContainer extends React.Component {
     }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.get('newsfeed');
   }
 

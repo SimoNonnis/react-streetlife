@@ -11,13 +11,17 @@ class CommentBox extends React.Component {
 
   render () {
     var { comments } = this.props;
-    var { count } = this.props;
+    var { commentsCount } = this.props;
+    var { postId } = this.props;
 
     return (
       <div className={styles.container}>
         <h4 className={styles.title}>Latest Comments</h4>
-        <button className={styles.viewAllBtn}>View All
-          <span className={styles.counter}>{count}</span>
+        <button
+          className={styles.viewAllBtn}
+          key={postId}
+        >View All
+          <span className={styles.counter}>{commentsCount}</span>
         </button>
         { comments.map((comment) => {
           return (
@@ -38,7 +42,8 @@ class CommentBox extends React.Component {
 
 CommentBox.propTypes = {
   comments: React.PropTypes.array,
-  count: React.PropTypes.number
+  commentsCount: React.PropTypes.number,
+  postId: React.PropTypes.string
 }
 
 export default CommentBox;

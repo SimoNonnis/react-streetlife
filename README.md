@@ -3,7 +3,7 @@
 Newsfeed single page app for a coding challenge built using react, css-modules,
 postcss, cssnext.
 
-State is managed using the container component pattern
+State is managed using the container component pattern:
   > A container does data fetching and then
   > renders its corresponding sub-component. That’s it.
 

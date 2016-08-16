@@ -15,12 +15,12 @@
 }
 
 .lastCommentsWrapper {
-  /*background-color: green;*/
+  /*background-color: transparent;*/
 }
 
-/*.allCommentsWrapper {
-
-}*/
+.allCommentsWrapper {
+  /*background-color: transparent;*/
+}
 
 .enter {
   opacity: .01;
@@ -28,7 +28,7 @@
 .enterActive {
   opacity: 1;
   transition: opacity 5000ms ease-in;
-  background-color: red;
+  background-color: red; /*just know is transitioning*/
 }
 .leave {
   opacity: 1;

@@ -7,14 +7,17 @@ class CommentBoxContainer extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      allComments: []
+      allComments: [],
+      viewAll: false
     }
     this.getAllComments = this.getAllComments.bind(this);
   }
 
   getAllComments() {
-    console.info('View All Clicked');
     this.get('newsfeed');
+    this.setState({
+      viewAll: !this.state.viewAll
+    })
   }
 
   get (data) {
@@ -27,6 +30,9 @@ class CommentBoxContainer extends React.Component {
           allComments: result.messages
         });
       })
+      .catch(function(error) {
+        console.error('Request failed', error)
+      });
   }
 
   render () {
@@ -34,6 +40,7 @@ class CommentBoxContainer extends React.Component {
     var { commentsCount } = this.props;
     var { postId } = this.props;
     var { allComments } = this.state;
+    var { viewAll } = this.state;
     return (
       <CommentBox
         comments={comments}
@@ -41,6 +48,7 @@ class CommentBoxContainer extends React.Component {
         postId={postId}
         allComments={allComments}
         getAllComments ={this.getAllComments}
+        viewAll={viewAll}
       />
     );
   }

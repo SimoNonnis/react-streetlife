@@ -25,6 +25,9 @@ class NewsFeedContainer extends React.Component {
           messages: result.messages
         });
       })
+      .catch(function(error) {
+        console.error('Request failed', error)
+      });
   }
 
   render () {

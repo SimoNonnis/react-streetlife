@@ -7,6 +7,40 @@
   padding-bottom: .5em;
 }
 
+
+/*=====================================*/
+
+.commentsWrapper {
+  position: relative;
+}
+
+.lastCommentsWrapper {
+  /*background-color: green;*/
+}
+
+/*.allCommentsWrapper {
+
+}*/
+
+.enter {
+  opacity: .01;
+}
+.enterActive {
+  opacity: 1;
+  transition: opacity 5000ms ease-in;
+  background-color: red;
+}
+.leave {
+  opacity: 1;
+}
+.leaveActive {
+  opacity: .01;
+  transition: opacity 3000ms ease-in;
+}
+
+/*=====================================*/
+
+
 .title {
   font-size: 1.4rem;
   padding: .5em;

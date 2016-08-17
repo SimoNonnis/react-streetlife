@@ -11,7 +11,7 @@ class NewsFeedContainer extends React.Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.get('newsfeed');
   }
 

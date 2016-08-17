@@ -7,37 +7,16 @@
   padding-bottom: .5em;
 }
 
-
+/*temporary hack to make css-modules works with react-addons-css-transition-group*/
 /*=====================================*/
+  :global .lastComments-appear {
+    opacity: .01;
+  }
 
-.commentsWrapper {
-  position: relative;
-}
-
-.lastCommentsWrapper {
-  /*background-color: transparent;*/
-}
-
-.allCommentsWrapper {
-  /*background-color: transparent;*/
-}
-
-.enter {
-  opacity: .01;
-}
-.enterActive {
-  opacity: 1;
-  transition: opacity 5000ms ease-in;
-  background-color: red; /*just know is transitioning*/
-}
-.leave {
-  opacity: 1;
-}
-.leaveActive {
-  opacity: .01;
-  transition: opacity 3000ms ease-in;
-}
-
+  :global .lastComments-appear-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
 /*=====================================*/
 
 

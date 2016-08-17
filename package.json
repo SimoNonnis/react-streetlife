@@ -2,7 +2,7 @@
   "name": "react-streetlife",
   "description": "Newsfeed single page app for a coding challenge built using react, css-modules",
   "author": "Simon Nonnis (https://github.com/SimoNonnis)",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "license": "MIT",
   "main": "src/main.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "build": "webpack -p --config webpack.config.prod.js",
     "postbuild": "http-server ./dist -p 8081 -d false --cors -o -c-1",
     "stats": "webpack --profile --json > stats.json",
-    "test": "NODE_ENV=test mocha --require './src/test/setup.js' --recursive './src/test/*.test.js' --compilers js:babel-core/register --require ignore-styles"
+    "test": "NODE_ENV=test mocha --require './src/test/setup/setup.js' --recursive './src/test/*.test.js' --compilers js:babel-core/register --require ignore-styles"
   },
   "keywords": [
     "react",

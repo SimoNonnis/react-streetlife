@@ -1,21 +1,12 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import classNames from 'classnames/bind';
 
 import Comment from './Comment';
 
 import styles from './commentBox.css';
-let cx = classNames.bind(styles);
 
 
 const CommentBox = ({comments, commentsCount, postId, allComments, getAllComments, viewAll}) => {
-
-  var transitionClasses = cx({
-    enter: styles.enter,
-    enterActive: styles.enterActive,
-    leave: styles.leave,
-    leaveActive: styles.leaveActive
-  });
 
   return (
     <div className={styles.container}>
@@ -30,10 +21,12 @@ const CommentBox = ({comments, commentsCount, postId, allComments, getAllComment
       <div className={styles.commentsWrapper} >
         <ReactCSSTransitionGroup
           component='div'
-          transitionName={transitionClasses}
-          transitionEnterTimeout={5000}
-          transitionLeaveTimeout={3000}
+          transitionName='lastComments'
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}
           className={styles.lastCommentsWrapper}
+          transitionAppear={true}
+          transitionAppearTimeout={500}
         >
           { comments.map((comment) => {
             return (
@@ -48,17 +41,17 @@ const CommentBox = ({comments, commentsCount, postId, allComments, getAllComment
           }) }
         </ReactCSSTransitionGroup>
         <div className={styles.allCommentsWrapper} >
-          { viewAll ? allComments.map((comment) => {
-            return (
-              <Comment
-                key={comment.id}
-                avatarUrl={comment.author.avatar}
-                name={comment.author.display_name}
-                body={comment.body}
-                time={comment.updated_at}
-              />
-            );
-          }) : null }
+            { viewAll ? allComments.map((comment) => {
+              return (
+                <Comment
+                  key={comment.id}
+                  avatarUrl={comment.author.avatar}
+                  name={comment.author.display_name}
+                  body={comment.body}
+                  time={comment.updated_at}
+                />
+              );
+            }) : null }
         </div>
       </div>
     </div>
